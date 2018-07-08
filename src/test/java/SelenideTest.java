@@ -1,11 +1,12 @@
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
-import org.junit.Test;
-import org.openqa.selenium.By;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 public class SelenideTest {
     @Test
+    @DisplayName("Selenide sample test.")
     public void test() {
         open("https://www.google.co.jp/");
         $("#lst-ib").val("selenide").pressEnter();
